@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50D13F82-5F0B-463A-9115-49F5114D5281}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoDAI_1</RootNamespace>
+    <AssemblyName>ProyectoDAI-1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltaDatos.xaml.cs">
+      <DependentUpon>AltaDatos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEv.xaml.cs">
+      <DependentUpon>AltaEv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AltaJug.xaml.cs">
+      <DependentUpon>AltaJug.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Evento.cs" />
+    <Compile Include="ITAMSportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITAMSportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Miembro.cs" />
+    <Compile Include="Tablas.xaml.cs">
+      <DependentUpon>Tablas.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AltaDatos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AltaEv.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AltaJug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Tablas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ITAMSportsDataSet.xsc">
+      <DependentUpon>ITAMSportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ITAMSportsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITAMSportsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITAMSportsDataSet.xss">
+      <DependentUpon>ITAMSportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logoV3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logoColmillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logoColmilloV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logoColmilloPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VolleyBall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="qué-son-los-eSports-dest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PiezaAjedrez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pingpong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="8-ping-pong-silhouette-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kisspng-basketball-slam-dunk-silhouette-clip-art-players-vector-5adc9698e1a7e8.4103675715244059129243.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kisspng-basketball-slam-dunk-silhouette-clip-art-players-vector-5adc9698e1a7e8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Football.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AmFootball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="4-40054_vector-free-sport-transprent-png-free-basketball-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="basketBall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pingpong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PiezaAjedrez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="esports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VolleyBall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VolleyJug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AmFootballJug.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ajedrez.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

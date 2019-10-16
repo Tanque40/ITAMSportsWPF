@@ -1,0 +1,43 @@
+﻿<Window x:Class="ProyectoDAI_1.Tablas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoDAI_1"
+        mc:Ignorable="d"
+        Title="Tablas" Height="750" Width="1100" Loaded="Window_Loaded" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+    <Grid Background="#441B1B1B">
+        <Image x:Name="ImgColmillos" Margin="757,2,-30,367" Source="logoColmilloPNG.png"/>
+        <Label x:Name="LbEsports" Content="Esports" HorizontalAlignment="Left" Margin="502,98,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="144" Visibility="Hidden"/>
+        <Image x:Name="ImgEsports" Margin="10,44,784,362" Source="esports.png" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
+        <Image x:Name="ImgBasket" Margin="10,35,737,362" Source="kisspng-basketball-slam-dunk-silhouette-clip-art-players-vector-5adc9698e1a7e8.png" Visibility="Hidden"/>
+        <Label x:Name="LbBasket" Content="Basketball" HorizontalAlignment="Left" Margin="476,97,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="202" Visibility="Hidden"/>
+        <Image x:Name="ImgArena" Margin="5,56,746,398" Source="AmFootball.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.1"/>
+                    <RotateTransform Angle="-23.809"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="LbArena" Content="Football arena" HorizontalAlignment="Left" Margin="446,98,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="287" Visibility="Hidden"/>
+        <Image x:Name="ImgPingPong" Margin="10,41,737,339" Source="8-ping-pong-silhouette-1.png" Visibility="Hidden"/>
+        <Label x:Name="LbPingPong" Content="Tenis de mesa" HorizontalAlignment="Left" Margin="448,100,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="264" Visibility="Hidden"/>
+        <Image x:Name="ImgAjedrez" Margin="56,44,827,358" Source="PiezaAjedrez.png" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
+        <Label x:Name="LbAjedrez" Content="Ajedrez" HorizontalAlignment="Left" Margin="476,100,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="142" Visibility="Hidden"/>
+        <Image x:Name="ImgFootball" Margin="46,44,794,367" Source="Football.png" Visibility="Hidden"/>
+        <Label x:Name="LbFootball" Content="Football" HorizontalAlignment="Left" Margin="506,92,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="154" Visibility="Hidden"/>
+        <Image x:Name="ImgVolleyball" Margin="-1,0,802,436" Source="VolleyJug.png" Visibility="Hidden"/>
+        <Label x:Name="LbVolleyBall" Content="Volleyball" HorizontalAlignment="Left" Margin="488,106,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Visibility="Hidden"/>
+        <DataGrid x:Name="DgMiembros" HorizontalAlignment="Left" Height="231" Margin="232,333,0,0" VerticalAlignment="Top" Width="271"/>
+        <DataGrid x:Name="DgEventos" HorizontalAlignment="Left" Height="231" Margin="563,333,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label Content="Jugadores/Miembros" HorizontalAlignment="Left" Margin="232,283,0,0" VerticalAlignment="Top" Height="43" Width="271" FontSize="20"/>
+        <Label Content="Eventos" HorizontalAlignment="Left" Margin="565,283,0,0" VerticalAlignment="Top" Height="43" Width="271" FontSize="20"/>
+        <Button x:Name="BtMiembros" Content="Modificar" HorizontalAlignment="Left" Margin="232,571,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="18" Click="BtMiembros_Click" IsEnabled="False" Visibility="Hidden"/>
+        <Button x:Name="BtEventos" Content="Modificar" HorizontalAlignment="Left" Margin="560,571,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="18" Click="BtEventos_Click" IsEnabled="False" Visibility="Hidden"/>
+        <Button Content="Regresar" HorizontalAlignment="Left" Margin="872,412,0,0" VerticalAlignment="Top" Width="135" Background="#652ABBFF" Click="Button_Click" Height="41" FontSize="25"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,1 @@
+Data Source=DESKTOP-I4BI3PH;Initial Catalog=baseSistemaAlumno;Integrated Security=True
