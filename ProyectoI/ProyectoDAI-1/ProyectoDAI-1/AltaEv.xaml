@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProyectoDAI_1.AltaEv"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoDAI_1"
+        mc:Ignorable="d"
+        Title="AltaEv" Height="350" Width="300">
+    <Grid Background="#441B1B1B">
+        <Button Content="Dar de alta" HorizontalAlignment="Left" Margin="188,265,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Margin="28,265,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="34,40,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxFecha" HorizontalAlignment="Left" Height="23" Margin="143,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Hora" HorizontalAlignment="Left" Margin="34,82,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxHora" HorizontalAlignment="Left" Height="23" Margin="143,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Lugar" HorizontalAlignment="Left" Margin="34,122,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxLugar" HorizontalAlignment="Left" Height="23" Margin="143,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Descripción" HorizontalAlignment="Left" Margin="34,162,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxDescripcion" HorizontalAlignment="Left" Height="78" Margin="143,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
