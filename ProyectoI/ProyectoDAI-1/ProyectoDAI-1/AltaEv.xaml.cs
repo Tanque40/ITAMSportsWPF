@@ -19,8 +19,10 @@ namespace ProyectoDAI_1
     /// </summary>
     public partial class AltaEv : Window
     {
-        public AltaEv()
+        char dep;
+        public AltaEv(char deporte)
         {
+            dep = deporte;
             InitializeComponent();
         }
 
@@ -28,5 +30,11 @@ namespace ProyectoDAI_1
         {
             this.Close();
         }
+
+        private void BtAlta_Click(object sender, RoutedEventArgs e)
+        {            
+            Evento ev = new Evento(dep, DTFecha.DisplayDate, TxHora.Text, TxLugar.Text, TxDescripcion.Text);
+            ev.alta(ev);
+        }//buttonMethod
     }
 }

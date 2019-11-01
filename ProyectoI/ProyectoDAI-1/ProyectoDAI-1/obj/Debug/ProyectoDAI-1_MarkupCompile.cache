@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\App.xaml
-6715142525
+11-1558187137
 
-141157940850
+20-1183412310
 13-1505183044
-AltaDatos.xaml;AltaEv.xaml;AltaJug.xaml;Login.xaml;MainWindow.xaml;Tablas.xaml;
+AltaBajaMod.xaml;AltaDatos.xaml;AltaEquipo.xaml;AltaEv.xaml;AltaJug.xaml;AltaJugEquipo.xaml;BajaModif.xaml;Login.xaml;MainWindow.xaml;ModificaEvento.xaml;Tablas.xaml;
 
 False
 

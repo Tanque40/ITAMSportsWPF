@@ -22,3 +22,13 @@ C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoD
 C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\Tablas.g.cs
 C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\Tablas.baml
 C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\App.g.cs
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\AltaBajaMod.g.cs
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\AltaBajaMod.baml
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\BajaModif.g.cs
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\ModificaEvento.g.cs
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\BajaModif.baml
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\ModificaEvento.baml
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\AltaEquipo.g.cs
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\AltaJugEquipo.g.cs
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\AltaEquipo.baml
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\ProyectoI\ProyectoDAI-1\ProyectoDAI-1\obj\Debug\AltaJugEquipo.baml

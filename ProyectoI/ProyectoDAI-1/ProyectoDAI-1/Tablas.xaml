@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoDAI_1"
         mc:Ignorable="d"
-        Title="Tablas" Height="750" Width="1100" Loaded="Window_Loaded" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+        Title="Tablas" Height="824" Width="1102" Loaded="Window_Loaded" WindowState="Maximized" WindowStartupLocation="CenterScreen">
     <Grid Background="#441B1B1B">
         <Image x:Name="ImgColmillos" Margin="757,2,-30,367" Source="logoColmilloPNG.png"/>
         <Label x:Name="LbEsports" Content="Esports" HorizontalAlignment="Left" Margin="502,98,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="144" Visibility="Hidden"/>
@@ -31,13 +31,16 @@
         <Label x:Name="LbFootball" Content="Football" HorizontalAlignment="Left" Margin="506,92,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Height="81" Width="154" Visibility="Hidden"/>
         <Image x:Name="ImgVolleyball" Margin="-1,0,802,436" Source="VolleyJug.png" Visibility="Hidden"/>
         <Label x:Name="LbVolleyBall" Content="Volleyball" HorizontalAlignment="Left" Margin="488,106,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Impact" Foreground="#FF006853" Visibility="Hidden"/>
-        <DataGrid x:Name="DgMiembros" HorizontalAlignment="Left" Height="231" Margin="232,333,0,0" VerticalAlignment="Top" Width="271"/>
-        <DataGrid x:Name="DgEventos" HorizontalAlignment="Left" Height="231" Margin="563,333,0,0" VerticalAlignment="Top" Width="268"/>
-        <Label Content="Jugadores/Miembros" HorizontalAlignment="Left" Margin="232,283,0,0" VerticalAlignment="Top" Height="43" Width="271" FontSize="20"/>
-        <Label Content="Eventos" HorizontalAlignment="Left" Margin="565,283,0,0" VerticalAlignment="Top" Height="43" Width="271" FontSize="20"/>
-        <Button x:Name="BtMiembros" Content="Modificar" HorizontalAlignment="Left" Margin="232,571,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="18" Click="BtMiembros_Click" IsEnabled="False" Visibility="Hidden"/>
-        <Button x:Name="BtEventos" Content="Modificar" HorizontalAlignment="Left" Margin="560,571,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="18" Click="BtEventos_Click" IsEnabled="False" Visibility="Hidden"/>
-        <Button Content="Regresar" HorizontalAlignment="Left" Margin="872,412,0,0" VerticalAlignment="Top" Width="135" Background="#652ABBFF" Click="Button_Click" Height="41" FontSize="25"/>
+        <DataGrid x:Name="DgMiembros" HorizontalAlignment="Left" Height="231" Margin="85,361,0,0" VerticalAlignment="Top" Width="271"/>
+        <DataGrid x:Name="DgEventos" HorizontalAlignment="Left" Height="231" Margin="416,361,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label Content="Jugadores/Miembros" HorizontalAlignment="Left" Margin="85,311,0,0" VerticalAlignment="Top" Height="43" Width="271" FontSize="20"/>
+        <Label Content="Eventos" HorizontalAlignment="Left" Margin="418,311,0,0" VerticalAlignment="Top" Height="43" Width="271" FontSize="20"/>
+        <Button x:Name="BtMiembros" Content="Modificar" HorizontalAlignment="Left" Margin="85,616,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="18" Click="BtMiembros_Click" IsEnabled="False" Visibility="Hidden"/>
+        <Button x:Name="BtEventos" Content="Modificar" HorizontalAlignment="Left" Margin="418,616,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="18" Click="BtEventos_Click" IsEnabled="False" Visibility="Hidden"/>
+        <Button Content="Regresar" HorizontalAlignment="Left" Margin="502,659,0,0" VerticalAlignment="Top" Width="135" Background="#652ABBFF" Click="Button_Click" Height="41" FontSize="25"/>
+        <DataGrid x:Name="DgEquipos" HorizontalAlignment="Left" Height="231" Margin="755,361,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label Content="Equipos" HorizontalAlignment="Left" Margin="757,311,0,0" VerticalAlignment="Top" Height="43" Width="271" FontSize="20"/>
+        <Button x:Name="BtEquipos" Content="Modificar" HorizontalAlignment="Left" Margin="752,616,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="18" Click="BtEquipos_Click" IsEnabled="False" Visibility="Hidden"/>
 
     </Grid>
 </Window>

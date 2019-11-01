@@ -7,14 +7,16 @@
         mc:Ignorable="d"
         Title="AltaJug" Height="230" Width="300" Loaded="Window_Loaded">
     <Grid Background="#441B1B1B">
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="34,40,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TxNombre" HorizontalAlignment="Left" Height="23" Margin="143,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Clave única" HorizontalAlignment="Left" Margin="34,82,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TxCU" HorizontalAlignment="Left" Height="23" Margin="143,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Dar de alta" HorizontalAlignment="Left" Margin="188,157,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Volver" HorizontalAlignment="Left" Margin="34,157,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <ComboBox x:Name="CbDeportes" HorizontalAlignment="Left" Margin="143,122,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Deporte" HorizontalAlignment="Left" Margin="34,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxNombre" HorizontalAlignment="Left" Height="23" Margin="143,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Clave única" HorizontalAlignment="Left" Margin="34,59,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxCU" HorizontalAlignment="Left" Height="23" Margin="143,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtAlta" Content="Dar de alta" HorizontalAlignment="Left" Margin="188,157,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button x:Name="BtVolver" Content="Volver" HorizontalAlignment="Left" Margin="34,157,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <ComboBox x:Name="CbDeportes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="143,123,0,0"/>
+        <Label Content="Deporte" HorizontalAlignment="Left" Margin="34,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sexo" HorizontalAlignment="Left" Margin="34,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxSexo" HorizontalAlignment="Left" Height="23" Margin="143,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

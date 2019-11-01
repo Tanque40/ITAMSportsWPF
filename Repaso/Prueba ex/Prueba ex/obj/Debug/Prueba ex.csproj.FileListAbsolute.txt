@@ -1,0 +1,55 @@
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\Prueba ex.dll.config
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\Prueba ex.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\Prueba ex.pdb
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\csc.exe
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\csc.exe.config
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\csc.rsp
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\csi.exe
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\csi.exe.config
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\csi.rsp
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.AppContext.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Console.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.IO.Compression.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Security.Claims.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.ValueTuple.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\vbc.exe
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\vbc.exe.config
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\vbc.rsp
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\VBCSCompiler.exe
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\obj\Debug\Prueba ex.csprojAssemblyReference.cache
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\obj\Debug\Prueba ex.csproj.CopyComplete
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\obj\Debug\Prueba ex.dll
+C:\Users\jlgut\Documents\ITAM\Programacion\DAI\Repaso\Prueba ex\Prueba ex\obj\Debug\Prueba ex.pdb

@@ -1,17 +1,24 @@
-/* Error: expected "}".
- *   ,
- * 2 | $color-secundario: #ff00dc;
- *   |                            ^
- *   '
- *   style.scss 2:28  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a   \2577 \a 2 \2502  $color-secundario: #ff00dc;\d\a   \2502                             ^\a   \2575 \a   style.scss 2:28  root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
 }
+
+body {
+  color: #ff1a1a;
+  background-color: #ffffff;
+  font-size: 30px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+a:after, a:hover {
+  border-bottom: 2px solid #ff1a1a;
+}
+/*# sourceMappingURL=style.css.map */

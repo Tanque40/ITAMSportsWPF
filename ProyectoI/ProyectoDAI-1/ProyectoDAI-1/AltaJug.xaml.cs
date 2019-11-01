@@ -19,8 +19,10 @@ namespace ProyectoDAI_1
     /// </summary>
     public partial class AltaJug : Window
     {
-        public AltaJug()
+        char dep;
+        public AltaJug(char deporte)
         {
+            dep = deporte;
             InitializeComponent();
         }//builder
 
@@ -84,6 +86,9 @@ namespace ProyectoDAI_1
             }//switch
             if (dep == '.')
                 return;
+            Miembro m = new Miembro(Convert.ToInt32(TxCU.Text), TxNombre.Text, TxSexo.Text.ElementAt(0));
+            m.agrega(m,dep);
+            MessageBox.Show("Alta efectuada");
 
         }//buttonMethod
     }//class

@@ -5,20 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoDAI_1"
         mc:Ignorable="d"
-        Title="AltaDatos" Height="300" Width="300">
+        Title="AltaDatos" Height="300" Width="300" Loaded="Window_Loaded">
     <Grid Background="#441B1B1B">
-        <Label Content="Clace única" HorizontalAlignment="Left" Margin="34,38,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="143,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Ganados" HorizontalAlignment="Left" Margin="34,92,0,0" VerticalAlignment="Top"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="148,95,0,0" VerticalAlignment="Top" Width="40"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="221,95,0,0" VerticalAlignment="Top" Width="40"/>
-        <Label Content="Perdidos" HorizontalAlignment="Left" Margin="34,128,0,0" VerticalAlignment="Top"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="148,131,0,0" VerticalAlignment="Top" Width="40"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="221,131,0,0" VerticalAlignment="Top" Width="40"/>
-        <Label Content="Ganados" HorizontalAlignment="Left" Margin="34,166,0,0" VerticalAlignment="Top"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="148,169,0,0" VerticalAlignment="Top" Width="40"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="221,169,0,0" VerticalAlignment="Top" Width="40"/>
-        <Button Content="Volver" HorizontalAlignment="Left" Margin="46,227,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lbCU" Content="Clave única" HorizontalAlignment="Left" Margin="34,17,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxClaveU" HorizontalAlignment="Left" Height="23" Margin="143,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ganados" HorizontalAlignment="Left" Margin="34,107,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtGanMas" Content="+" HorizontalAlignment="Left" Margin="223,110,0,0" VerticalAlignment="Top" Width="40" Click="BtGanMas_Click"/>
+        <Button x:Name="BtGanMenos" Content="-" HorizontalAlignment="Left" Margin="143,110,0,0" VerticalAlignment="Top" Width="40" Click="BtGanMenos_Click"/>
+        <Label Content="Perdidos" HorizontalAlignment="Left" Margin="34,143,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtPerdMas" Content="+" HorizontalAlignment="Left" Margin="223,146,0,0" VerticalAlignment="Top" Width="40" Click="BtPerdMas_Click"/>
+        <Button x:Name="BtPerdMenos1" Content="-" HorizontalAlignment="Left" Margin="143,146,0,0" VerticalAlignment="Top" Width="40" Click="BtPerdMenos1_Click"/>
+        <Label Content="Empatados" HorizontalAlignment="Left" Margin="34,181,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtEmpMas" Content="+" HorizontalAlignment="Left" Margin="223,184,0,0" VerticalAlignment="Top" Width="40" Click="BtEmpMas_Click"/>
+        <Button x:Name="BtEmMenos" Content="-" HorizontalAlignment="Left" Margin="143,184,0,0" VerticalAlignment="Top" Width="40" Click="BtEmMenos_Click"/>
+        <Button x:Name="BtVolver" Content="Volver" HorizontalAlignment="Left" Margin="28,226,0,0" VerticalAlignment="Top" Width="75" Click="BtVolver_Click"/>
+        <Label x:Name="lbRol" Content="Rol" HorizontalAlignment="Left" Margin="34,73,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxRol" HorizontalAlignment="Left" Height="23" Margin="143,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxGan" HorizontalAlignment="Left" Height="23" Margin="187,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33"/>
+        <TextBox x:Name="TxPerd" HorizontalAlignment="Left" Height="23" Margin="187,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33"/>
+        <TextBox x:Name="TxEmp" HorizontalAlignment="Left" Height="23" Margin="187,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33"/>
+        <Button x:Name="BtBusca" Content="Buscar" HorizontalAlignment="Left" Margin="108,226,0,0" VerticalAlignment="Top" Width="75" Click="BtBusca_Click"/>
+        <Button x:Name="BtActualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="188,226,0,0" VerticalAlignment="Top" Width="75" Click="BtActualizar_Click" Visibility="Hidden"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="34,45,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxNombre" HorizontalAlignment="Left" Height="23" Margin="143,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtAltaJug" Content="Alta miembro" HorizontalAlignment="Left" Margin="188,206,0,0" VerticalAlignment="Top" Width="75" Click="BtAltaJug_Click" Visibility="Hidden"/>
 
     </Grid>
 </Window>

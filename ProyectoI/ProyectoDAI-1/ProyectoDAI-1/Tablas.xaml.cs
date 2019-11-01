@@ -88,27 +88,44 @@ namespace ProyectoDAI_1
             {
                 BtEventos.IsEnabled = true;
                 BtMiembros.IsEnabled = true;
+                BtEquipos.IsEnabled = true;
                 BtEventos.Visibility = Visibility.Visible;
                 BtMiembros.Visibility = Visibility.Visible;
+                BtEquipos.Visibility = Visibility.Visible;
             }//if
             DgMiembros.ItemsSource = Conexion.llenarDgMiembros(deporte);
             DgEventos.ItemsSource = Conexion.llenarDgEventos(deporte);
+            DgEquipos.ItemsSource = Conexion.llenarDgEquipos(deporte);
         }//load
 
         private void BtMiembros_Click(object sender, RoutedEventArgs e)
         {
-
+            AltaBajaMod a = new AltaBajaMod(deporte, 'm');
+            a.Show();
         }//buttonMethod
 
         private void BtEventos_Click(object sender, RoutedEventArgs e)
         {
-
+            AltaBajaMod a = new AltaBajaMod(deporte, 'e');
+            a.Show();
         }//buttonMethod
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             inicio.Show();
             this.Close();
+            BtEventos.IsEnabled = false;
+            BtMiembros.IsEnabled = false;
+            BtEquipos.IsEnabled = false;
+            BtEventos.Visibility = Visibility.Hidden;
+            BtMiembros.Visibility = Visibility.Hidden;
+            BtEquipos.Visibility = Visibility.Hidden;
+        }//buttonMethod
+
+        private void BtEquipos_Click(object sender, RoutedEventArgs e)
+        {
+            AltaBajaMod a = new AltaBajaMod(deporte, 'q');
+            a.Show();
         }//buttonMethod
     }//class
 }//namespace

@@ -34,10 +34,7 @@ namespace ProyectoDAI_1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("hace algo");
-            MessageBox.Show("Antes");
             int temp = Conexion.comprobarPwd(TxUsuario.Text, TxPasswd.Text);
-            MessageBox.Show("Despues");
             switch (temp)
             {
                 case 0://Usuario incorrecto
@@ -50,6 +47,7 @@ namespace ProyectoDAI_1
                         MessageBox.Show("Bienvenido " + TxUsuario.Text);
 
                         inicio.adm = Conexion.encuentraDep(TxUsuario.Text);
+                        this.Close();
                     }//case
                     break;
                 case 2://Contraseña incorrecta
@@ -63,14 +61,14 @@ namespace ProyectoDAI_1
                     }//case
                     break;
                 default:
-                    MessageBox.Show("Que verga esta pasando");
+                    MessageBox.Show("Esto no debería pasar");
                     break;
             }//switch
         }//buttonMethod
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
-        }
+            MessageBox.Show("Puedes contactar a los desarrolladores al correo jguti109@itam.mx para cualquier problema técnico");
+        }//buttonMethod
     }
 }

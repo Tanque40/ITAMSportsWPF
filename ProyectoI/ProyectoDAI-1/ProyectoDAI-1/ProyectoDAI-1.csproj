@@ -51,8 +51,14 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltaBajaMod.xaml.cs">
+      <DependentUpon>AltaBajaMod.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AltaDatos.xaml.cs">
       <DependentUpon>AltaDatos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEquipo.xaml.cs">
+      <DependentUpon>AltaEquipo.xaml</DependentUpon>
     </Compile>
     <Compile Include="AltaEv.xaml.cs">
       <DependentUpon>AltaEv.xaml</DependentUpon>
@@ -60,10 +66,17 @@
     <Compile Include="AltaJug.xaml.cs">
       <DependentUpon>AltaJug.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AltaJugEquipo.xaml.cs">
+      <DependentUpon>AltaJugEquipo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BajaModif.xaml.cs">
+      <DependentUpon>BajaModif.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Equipo.cs" />
     <Compile Include="Evento.cs" />
     <Compile Include="ITAMSportsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -71,10 +84,21 @@
       <DependentUpon>ITAMSportsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Miembro.cs" />
+    <Compile Include="ModificaEvento.xaml.cs">
+      <DependentUpon>ModificaEvento.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tablas.xaml.cs">
       <DependentUpon>Tablas.xaml</DependentUpon>
     </Compile>
+    <Page Include="AltaBajaMod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AltaDatos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AltaEquipo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,6 +114,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AltaJugEquipo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BajaModif.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +137,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ModificaEvento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Tablas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

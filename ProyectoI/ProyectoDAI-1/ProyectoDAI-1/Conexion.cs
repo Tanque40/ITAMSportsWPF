@@ -21,12 +21,12 @@ namespace ProyectoDAI_1
             {
                 cnn = new SqlConnection("Data Source=DESKTOP-I4BI3PH;Initial Catalog=ITAMSports;Integrated Security=True");
                 cnn.Open();
-                MessageBox.Show("Se conectó a la base de datos correctamente");
+                //MessageBox.Show("Se conectó a la base de datos correctamente");
             }//try
             catch (Exception ex)
             {
                 cnn = null;
-                MessageBox.Show("No se pudo hacer la conexión: " + ex);
+                MessageBox.Show("No se pudo hacer la conexión a la base de datos: " + ex);
             }//catch
 
 
@@ -65,14 +65,17 @@ namespace ProyectoDAI_1
             try
             {
                 SqlConnection con = conectar();
-                SqlCommand cmd = new SqlCommand(String.Format("select nombre, rol, jugados, ganados, perdidos from Jugador inner join TieneDepJug on Jugador.claveUnica = TieneDepJug.claveUnica inner join Datos on Jugador.claveUnica = Datos.claveUnica where idDep = '{0}'", dep), con);
+                SqlCommand cmd = new SqlCommand(String.Format("select nombre, rol, jugados, ganados, perdidos, Jugador.claveUnica from Jugador inner join TieneDepJug on Jugador.claveUnica = TieneDepJug.claveUnica inner join Datos on Jugador.claveUnica = Datos.claveUnica where idDep = '{0}'", dep), con);
                 rd = cmd.ExecuteReader(); //#de registros afectados
                 while (rd.Read())
                 {
-                    m = new Miembro();
-                    m.claveU = Convert.ToInt16(rd.GetString(0));
-                    m.nombre = rd.GetString(1);
-                    //m.sexo = rd.GetString(2)[0];
+                    m = new Miembro();                    
+                    m.nombre = rd.GetString(0);
+                    m.rol = rd.GetString(1);
+                    m.jugados = rd.GetInt16(2);
+                    m.ganados = rd.GetInt16(3);
+                    m.perdidos = rd.GetInt16(4);
+                    m.claveU = rd.GetInt16(5);
                     l.Add(m);
                 }//while
                 con.Close();
@@ -93,15 +96,48 @@ namespace ProyectoDAI_1
             try
             {
                 SqlConnection con = conectar();
-                SqlCommand cmd = new SqlCommand(String.Format("select fecha, hora, lugar, descripcion from Evento where idDep = '%{0}%'", dep), con);
+                SqlCommand cmd = new SqlCommand(String.Format("select idDep, fecha, hora, lugar, descripcion, idEvento from Evento where idDep = '{0}'", dep), con);
                 rd = cmd.ExecuteReader(); //#de registros afectados
                 while (rd.Read())
                 {
                     e = new Evento();
-                    e.hora = rd.GetString(0);
-                    e.hora = rd.GetString(1);
-                    e.lugar = rd.GetString(2);
-                    e.descripcion = rd.GetString(3);
+                    e.idDep = rd.GetString(0)[0];
+                    e.fecha = rd.GetDateTime(1).ToShortDateString();
+                    e.hora = rd.GetTimeSpan(2).ToString();
+                    e.lugar = rd.GetString(3);
+                    e.descripcion = rd.GetString(4);
+                    e.idEv = rd.GetInt16(5);
+                    l.Add(e);
+                    Console.WriteLine();
+                }//while
+                con.Close();
+            }//try
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al llenar el data grid con los eventos: " + ex.ToString());
+            }//catch
+
+            return l;
+        }//method
+
+        public static List<Equipo> llenarDgEquipos(char dep)
+        {
+            List<Equipo> l = new List<Equipo>();
+            SqlDataReader rd;
+            Equipo e;
+            try
+            {
+                SqlConnection con = conectar();
+                SqlCommand cmd = new SqlCommand(String.Format("select idEquipo, ganados, perdidos, jugados, nombre from Equipo where idDep = '{0}'", dep), con);
+                rd = cmd.ExecuteReader(); //#de registros afectados
+                while (rd.Read())
+                {
+                    e = new Equipo();
+                    e.idEquipo = rd.GetInt16(0);
+                    e.ganados = rd.GetInt16(1);
+                    e.perdidos = rd.GetInt16(2);
+                    e.jugados = rd.GetInt16(3);
+                    e.nombre = rd.GetString(4);
                     l.Add(e);
                 }//while
                 con.Close();
@@ -142,18 +178,37 @@ namespace ProyectoDAI_1
             {
                 SqlConnection con = conectar();
                 SqlCommand cmd = new SqlCommand("select nombre from Deporte order by nombre", con);
-                SqlDataReader rd = cmd.ExecuteReader();
-                int i = 0;
+                SqlDataReader rd = cmd.ExecuteReader();                
                 while (rd.Read())
                 {
-                    res.Add(rd.GetString(i));
-                    i++;
+                    res.Add(rd.GetString(0));                    
                 }//while
             }//try
             catch(Exception ex)
             {
                 MessageBox.Show("Error al buscar los deportes disponibles: \n" + ex.ToString());
             }//catch
+            return res;
+        }//method
+
+        //Este metodo recibe el string de la tabla en la que tiene que buscar el siguiente id disponible
+        public static int topId(string tabla)
+        {
+            int res;
+            try
+            {
+                SqlConnection con = conectar();
+                SqlCommand cmd = new SqlCommand(String.Format("select top 1 id{0} from {0} order by id{0} desc ", tabla), con);
+                SqlDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                res = rd.GetInt16(0) + 1;
+            }//try
+            catch(Exception ex)
+            {
+                res = 0;
+                MessageBox.Show("Error al buscar el topID en la tabla "+tabla+": " + ex);
+            }//catch
+
             return res;
         }//method
 

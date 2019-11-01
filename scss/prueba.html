@@ -2,6 +2,20 @@
 <html>
     <head>
         <title>Mi Primer SASS</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background: red;
+                position: relative;
+                animation: mymove .7s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes mymove {
+            from {left: -10px; background-color: white}
+            to {left: 30px; background-color: blue;}
+            }
+        </style>
         <link rel = "stylesheet" type = "text/css" href = "style.css"/>        
     </head>
     <body>
