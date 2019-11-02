@@ -54,10 +54,14 @@ namespace ProyectoDAI_1
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+        }
+        private void BtBusca_Click(object sender, RoutedEventArgs e)
+        {
+            string idE = TxId.Text;
             try
             {
                 SqlConnection con = Conexion.conectar();
-                SqlCommand cmd = new SqlCommand(String.Format("select fecha, hora, lugar, descripcion from Evento where idEv = {0}", idEvento), con);
+                SqlCommand cmd = new SqlCommand(String.Format("select fecha, hora, lugar, descripcion from Evento where idEvento = {0}", idE), con);
                 SqlDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 TxFecha.Text = rd.GetDateTime(0).ToShortDateString();
@@ -66,11 +70,13 @@ namespace ProyectoDAI_1
                 TxDescripcion.Text = rd.GetString(3);
                 rd.Close();
                 con.Close();
+                BtModificar.IsEnabled = true;
+                BtModificar.Visibility = Visibility.Visible;
             }//try
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error al buscar la información del evento: " + ex);
             }//catch
-        }//load
-    }
-}
+        }//method
+    }//class
+}//namespace
